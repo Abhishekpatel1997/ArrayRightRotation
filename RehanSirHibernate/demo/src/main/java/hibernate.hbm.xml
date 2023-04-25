@@ -1,0 +1,14 @@
+<element>
+	<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+</element>
+
+<hibernate-mapping> 
+  <class name="com.abhi.demo.Person" table="person">
+   <id name="personid" column="personid">
+    <generator class="assigned" />
+   </id>
+   <property name="name" column="name" length="30"/>
+  </class>	   
+</hibernate-mapping>  
